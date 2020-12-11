@@ -1,0 +1,27 @@
+.meetup-button {
+  button {
+    width: 100%;
+    height: 52px;
+    background: #385775;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: all .3s;
+  }
+
+  &--default {
+    button:hover {
+      background: #C9EBFF;
+      color: black;
+    }
+  }
+
+  &--disabled {
+    button {
+      background: grey;
+      cursor: not-allowed;
+    }
+  }
+}

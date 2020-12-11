@@ -1,0 +1,50 @@
+.meetup-input {
+  &__label{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: grey;
+    padding-bottom: 10px;
+  }
+  &__control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    height: 52px;
+    background: white;
+    border-radius: 8px;
+    border: 2px solid lightblue;
+    transition: all .3s;
+    box-sizing: border-box;
+    input {
+      display: inline-block;
+      width: 100%;
+      text-overflow: ellipsis;
+      outline: none;
+      border: none;
+      font-family: Nunito, sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+
+      // autofill hack
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        animation: autofill 0s forwards;
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+        -webkit-text-fill-color: grey !important;
+      }
+      &::placeholder {
+        color: lightblue;
+      }
+    }
+  }
+
+  &__password-toggler {
+    color: #73D0F5;
+    cursor: pointer;
+  }
+}
