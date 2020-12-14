@@ -1,11 +1,11 @@
 <template>
     <svg xmlns="http://www.w3.org/2000/svg"
-        data-icon="dial"
-        fill="currentColor"
-        focusable="false"
-        width="100%"
-        height="100%"
-        viewBox="0 0 261 263"
+         data-icon="dial"
+         fill="currentColor"
+         focusable="false"
+         width="100%"
+         height="100%"
+         viewBox="0 0 261 263"
     >
         <path
                 class="sub-bg"
@@ -23,3 +23,9 @@
         />
     </svg>
 </template>
+
+<script>
+    export default {
+        name: 'ClockDial'
+    }
+</script>

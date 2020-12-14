@@ -1,4 +1,7 @@
+@import './styles/variables.scss';
+
 .app {
+  background: $background;
   &__header {
     display: flex;
     flex-direction: column;
@@ -14,7 +17,7 @@
       font-weight: 200;
       padding-left: 40px;
       text-decoration: none;
-      color: black;
+      color: $main-text-color;
       &:before {
         content: "";
         display: block;
@@ -43,7 +46,7 @@
       font-weight: 400;
       user-select: none;
       text-decoration: none;
-      color: black;
+      color: $main-text-color;
     }
   }
   &__main {

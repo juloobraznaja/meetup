@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .meetup-clock {
   width: 130px;
   height: 130px;
@@ -12,17 +14,17 @@
     height: inherit;
     width: inherit;
 
-    .bg {
-      fill: #73D0F5;
+    ::v-deep .bg {
+      fill: $form-background;
     }
 
-    .sub-bg {
-      fill: lightblue;
+    ::v-deep .sub-bg {
+      fill: $border-color;
     }
   }
 
   &:after {
-    background-color: black;
+    background-color: $clock-arrow;
     display: block;
     content: "";
     width: 10px;
@@ -35,7 +37,7 @@
   }
 
   &__time {
-    color: black;
+    color: $clock-arrow;
     font-size: 40px;
     position: relative;
     z-index: 2;
@@ -54,7 +56,7 @@
   }
 
   &__seconds {
-    background-color: black;
+    background-color: $clock-arrow;
     opacity: .5;
     width: 1px;
     height: 46px;
@@ -62,7 +64,7 @@
   }
 
   &__minute {
-    background-color: black;
+    background-color: $clock-arrow;
     opacity: .5;
     width: 2px;
     height: 46px;
@@ -70,7 +72,7 @@
   }
 
   &__hour {
-    background-color: black;
+    background-color: $clock-arrow;
     opacity: .5;
     width: 4px;
     height: 39px;

@@ -1,4 +1,4 @@
-import Main from '../pages/Main/MainPage'
+import Main from '../pages/MainPage'
 export default [
     {
         path: '/',

@@ -1,9 +1,11 @@
+@import '../../styles/variables.scss';
+
 .meetup-input {
   &__label{
     font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    color: grey;
+    color: $grey-text-color;
     padding-bottom: 10px;
   }
   &__control {
@@ -14,7 +16,7 @@
     height: 52px;
     background: white;
     border-radius: 8px;
-    border: 2px solid lightblue;
+    border: 2px solid $border-color;
     transition: all .3s;
     box-sizing: border-box;
     input {
@@ -35,7 +37,7 @@
       &:-webkit-autofill:active {
         animation: autofill 0s forwards;
         -webkit-box-shadow: 0 0 0 30px white inset !important;
-        -webkit-text-fill-color: grey !important;
+        -webkit-text-fill-color: $grey-text-color !important;
       }
       &::placeholder {
         color: lightblue;

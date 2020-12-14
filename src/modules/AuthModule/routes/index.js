@@ -1,5 +1,5 @@
-import Login from '../pages/Login/LoginPage'
-import Registration from '../pages/Registration/RegistrationPage'
+import Login from '../pages/LoginPage'
+import Registration from '../pages/RegistrationPage'
 export default [
     {
         path: '/login',

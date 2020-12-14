@@ -1,7 +1,7 @@
 <template>
     <div class="meetup-clock">
         <div class="meetup-clock__dial">
-            <meetup-icon name="dial" size="130"/>
+            <clock-dial/>
         </div>
         <span class="meetup-clock__time">{{ checkNumber(hour) }}</span>
         <span class="meetup-clock__time">{{ checkNumber(minutes) }}</span>
@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import MeetupIcon from '../Icon';
+import ClockDial from './Dial'
 
 export default {
     name: 'MeetupClock',
     components: {
-        MeetupIcon
+        ClockDial
     },
     data() {
         return {
